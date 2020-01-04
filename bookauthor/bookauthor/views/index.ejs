@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+        <style>
+            h1 {
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+        </style>
+    </head>
+  <body>
+
+     <div class="col-md-6 offset-md-3 mt-5">
+        <a >
+          <img src='https://getform.io/_nuxt/img/095d0b3.svg'>
+        </a>
+        <br>
+        <a  class="mt-3 d-flex">Get your free endpoint now</a>
+        <h1>Getform.io HTML Form Example</h1>
+        <!-- <form    action="/uploadimg" method="POST" enctype="multipart/form-data" >  -->
+          <div class="form-group">
+            <label for="exampleInputEmail1" required="required">Enter Authore Name</label>
+            <input type="text" name="authorename" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Authore Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputName">Book Name</label>
+            <input type="text" name="bookname" class="form-control" id="exampleInputbookName" placeholder="Enter Book Name" required="required">
+          </div>
+          <!-- <div class="form-group">
+            <label for="exampleFormControlSelect1">Favourite Platform</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="platform" required="required">
+              <option>Github</option>
+              <option>Gitlab</option>
+              <option>Bitbucket</option>
+            </select>
+          </div> -->
+          <hr>
+          <div class="form-group mt-3">
+            <label class="mr-2">Upload Book Image</label>
+            <input type="file" id='image' name="image">
+          </div>
+          <hr>
+          <button type="submit" onclick="saveAuthore()" id='authoreSave' class="btn btn-primary">Submit</button>
+        
+    </div>
+<!-- </form> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="public/js/common.js">  </script>
+  </body>
+</html>
